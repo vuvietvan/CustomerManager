@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="nav div-title">
+        <img src="../assets/images/icons8-customer-30.png" alt="icon-customer">
+        <div class="title-customer">Customer</div>
+    </div>
+    <div class="nav">
+        <li class="nav-item">
+            <a class="nav-link" (click)="showCard()"><i class="fa fa-windows"></i>&nbsp;&nbsp;Card View</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="showList()"><i class="fa fa-list"></i>&nbsp;&nbsp;List View</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="openDialog()"><i class="fa fa-plus"></i>&nbsp;&nbsp;Open dialog</a>
+        </li>
+        <li style="margin: auto;margin-right: inherit;">
+            <input class="form-control" placeholder="Search...." #searchBox (keyup)="search(searchBox.value)" />
+        </li>
+    </div>
+
+    <div class="row" *ngIf="Card">
+        <tr class="col-sm-3 bd-item" *ngFor="let item of customer| paginate: { itemsPerPage: 5, currentPage: p };let i = index;">
+            <div class="name-people">
+                <span>{{item.firstName}}&nbsp;{{item.lastName}}</span>
+                <span class="edit" routerLink="/detail/{{item.id}}"><i class="fa fa-edit"></i></span>
+            </div>
+            <div class="info-people">
+                <div class="genfer-image">
+                    <img style="width: 80px;height: auto;" src="../assets/images/{{item.gender}}.png">
+                </div>
+                <div class="detail-info">
+                    <p class="item-city">{{item.city}} </p>
+                    <p class="item-state">{{item.state}}</p>
+                    <p class="view-orders">View Orders</p>
+                </div>
+            </div>
+        </tr>
+    </div>
+    <div class="example" *ngIf="List">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of customer| paginate: { itemsPerPage: 5, currentPage: p };let i = index;">
+                        <td><img style="width: 40px;height: auto;" src="../assets/images/{{item.gender}}.png"></td>
+                        <td>{{item.firstName}}</td>
+                        <td>{{item.lastName}}</td>
+                        <td>{{item.address}}</td>
+                        <td>{{item.city}}</td>
+                        <td>{{item.state}}</td>
+                        <td style="color: #007bff;cursor: pointer;">Views Orders</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <ul>
+        <li *ngFor="let item of customer | paginate: { itemsPerPage: 5, currentPage: p }"> </li>
+    </ul>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+</div>

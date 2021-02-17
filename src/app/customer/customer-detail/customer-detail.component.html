@@ -1,0 +1,65 @@
+<div *ngIf="customer" class="container">
+    <div class="nav div-title">
+        <img src="../assets/images/icons8-customer-30.png" alt="icon-customer">
+        <div class="title-customer">Full Name: {{customer.firstName}} {{customer.lastName}}</div>
+    </div>
+    <div>
+        <div class="form-group">
+            <label>FirstName :</label>
+            <div> <input type="text" [(ngModel)]="customer.firstName" class="form-control" placeholder="Enter FirstName" #firstname="ngModel" required></div>
+            <div [hidden]="firstname.valid || firstname.pristine" class="alert alert-danger">
+                First Name is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label>LastName : </label>
+            <div>
+                <input type="text" [(ngModel)]="customer.lastName" class="form-control" placeholder="Enter LastName" #lastname="ngModel" required>
+            </div>
+            <div [hidden]="lastname.valid || lastname.pristine" class="alert alert-danger">
+                Last Name is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Gender : </label>
+            <div>
+                <input type="text" [(ngModel)]="customer.gender" class="form-control" placeholder="Enter Gender" required> </div>
+        </div>
+        <div class="form-group">
+            <label> Email : </label>
+            <div>
+                <input type="email" [(ngModel)]="customer.mail" class="form-control" placeholder="Enter Email " #mail="ngModel" required> </div>
+            <div [hidden]="mail.valid || mail.pristine " class="alert alert-danger">
+                Email is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label> Address : </label>
+            <div>
+                <input type="text" [(ngModel)]="customer.address" class="form-control" placeholder="Enter Address " #address="ngModel" required> </div>
+            <div [hidden]="address.valid || address.pristine " class="alert alert-danger">
+                Address is required </div>
+        </div>
+        <div class="form-group">
+            <label> City : </label>
+            <div>
+                <input type="text" [(ngModel)]="customer.city" class="form-control" placeholder="Enter City " #city="ngModel" required> </div>
+        </div>
+        <div [hidden]="city.valid || city.pristine " class="alert alert-danger">
+            City is required
+        </div>
+        <div class="form-group">
+            <label> State : </label>
+            <div>
+                <input type="text" [(ngModel)]="customer.state" class="form-control" placeholder="Enter State " #state="ngModel" required> </div>
+        </div>
+        <div [hidden]="state.valid || state.pristine " class="alert alert-danger">
+            State is required
+        </div>
+    </div>
+    <div>
+        <button class="pd btn btn-danger" type="button" (click)="deleted(customer.id)">Delete</button>
+        <button class="pd btn btn-secondary" type="button" (click)="goBack()"> Cancel</button>
+        <button class="pd btn btn-success" type="button" (click)="save()"> Save</button>
+    </div>
+</div>

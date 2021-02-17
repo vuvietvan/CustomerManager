@@ -1,0 +1,80 @@
+    .title-customer {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0 25px;
+        line-height: 30px;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    
+    .div-title {
+        padding: 10px 0;
+    }
+    
+    .example {
+        margin: 20px;
+    }
+    
+    .bd-item {
+        margin-bottom: 30px;
+        .name-people {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            background: #007bff;
+            padding: 5px 10px;
+            color: #ffffff;
+            font-size: 20px;
+            align-items: center;
+            .edit {
+                cursor: pointer;
+            }
+        }
+        .info-people {
+            display: flex;
+            padding: 5px;
+            border: 1px solid #c9c9c9;
+            .detail-info {
+                margin-left: 30px;
+                margin-bottom: 30px;
+                .item-city,
+                .item-state {
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .view-orders {
+                    color: #007bff;
+                    cursor: pointer;
+                }
+                .view-orders:hover {
+                    color: #b60000;
+                }
+            }
+        }
+    }
+    
+    .table {
+        td,
+        th {
+            padding: .75rem;
+            vertical-align: inherit;
+            border-top: 1px solid #dee2e6;
+        }
+    }
+    
+    .example-form-field {
+        width: 200px;
+    }
+    
+    .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    .example-full-width {
+        width: 100%;
+    }

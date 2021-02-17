@@ -1,0 +1,116 @@
+{
+  "customer": [
+    {
+      "id": 2,
+      "firstName": "Brian",
+      "lastName": "Bishop",
+      "gender": "female",
+      "mail": "ks2@gmail.com",
+      "address": "4475 MAPLEWOOD",
+      "city": "Georgia",
+      "state": "Illinois"
+    },
+    {
+      "id": 3,
+      "firstName": "Christopher ",
+      "lastName": "James",
+      "gender": "male",
+      "mail": "ks3@gmail",
+      "address": "1501 E CENTURY",
+      "city": "Indianapolis",
+      "state": "Indiana"
+    },
+    {
+      "id": 4,
+      "firstName": "David ",
+      "lastName": "James",
+      "gender": "female",
+      "mail": "ks4@gmail",
+      "address": "611 N LARCHMONT",
+      "city": "Philadelphia",
+      "state": "Pennsylvania"
+    },
+    {
+      "id": 5,
+      "firstName": "Daniel",
+      "lastName": "Linda",
+      "gender": "female",
+      "mail": "ks5@gmail",
+      "address": "8701 S SAN PEDRO",
+      "city": "Goshen ",
+      "state": "Indiana"
+    },
+    {
+      "id": 6,
+      "firstName": "Matthew",
+      "lastName": "Jennifer",
+      "gender": "female",
+      "mail": "ks6gmail",
+      "address": "237 W 84TH",
+      "city": "Detroit",
+      "state": "Michigan"
+    },
+    {
+      "id": 7,
+      "firstName": "Emma",
+      "lastName": "Emily",
+      "gender": "male",
+      "mail": "ks7@gmail",
+      "address": "8701 METTLER",
+      "city": "South Bend",
+      "state": "Pennsylvania"
+    },
+    {
+      "id": 8,
+      "firstName": "Rebecca",
+      "lastName": "Kevin",
+      "gender": "female",
+      "mail": "ks8@gmail",
+      "address": "7701 S FLOWER",
+      "city": "Lansing",
+      "state": "Michigan"
+    },
+    {
+      "id": 9,
+      "firstName": "Ted ",
+      "lastName": "James",
+      "gender": "male",
+      "mail": "ks9@gmail",
+      "address": "1300 E 70TH",
+      "city": "Saint Paul",
+      "state": "Washington"
+    },
+    {
+      "firstName": "Vũ Viết",
+      "lastName": "Văn",
+      "gender": "male",
+      "mail": "ks708vant3@gmail.com",
+      "address": "505 Minh Khai",
+      "city": "Hoàng Mai",
+      "state": "Hà Nội",
+      "id": 10
+    },
+    {
+      "firstName": "Kely",
+      "lastName": "Jame",
+      "gender": "female",
+      "mail": "LT@gmail.com",
+      "address": "Số 10 Nam Dư ",
+      "city": "Quận 2",
+      "state": "TP. Hồ Chí Minh",
+      "id": 11
+    }
+  ],
+  "odrers": [
+    {
+      "id": 1,
+      "NameO": "some comment",
+      "postId": 1
+    }
+  ],
+  "login": {
+    "id": 1,
+    "User": "admincp",
+    "Pass": "123456"
+  }
+}

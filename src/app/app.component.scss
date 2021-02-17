@@ -1,0 +1,17 @@
+.menu-link {
+    justify-content: start;
+}
+
+.nav-item {
+    a {
+        color: #ffffff;
+    }
+}
+
+.nav-item:hover {
+    background: #f2f2f2;
+    border-radius: 3px;
+    a {
+        color: #007bff;
+    }
+}
